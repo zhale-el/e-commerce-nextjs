@@ -1,5 +1,11 @@
-const Home = () => {
-  return <div>Enter</div>;
+import { UserButton } from "@clerk/nextjs";
+
+const SetupPage = () => {
+  return (
+    <div className="p-4">
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 };
 
-export default Home;
+export default SetupPage;
